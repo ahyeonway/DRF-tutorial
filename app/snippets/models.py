@@ -12,8 +12,8 @@ class Snippet(models.Model):
     title = models.CharField(max_length=100, blank=True)
     code = models.TextField()
     linenos = models.BooleanField(default=False)
-    language = models.CharField(choices=LANGUAGE_CHOICES, max_length=100, default='pyhon')
-    style = models.CharField(choices=STYLE_CHOICES, default='freindly', max_length=100)
+    language = models.CharField(choices=LANGUAGE_CHOICES, max_length=100, default='python')
+    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)
 
     class Meta:
         ordering = ('created', )
