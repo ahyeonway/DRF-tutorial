@@ -29,7 +29,6 @@ class SnippetSerializer(serializers.Serializer):
         instance.save()
         return instance
 
-
 class SnippetSerializer2:
     pk = None
     title = None
