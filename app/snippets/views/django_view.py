@@ -6,8 +6,13 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 from rest_framework.renderers import JSONRenderer
 
-from .models import Snippet
-from .serializers.ModelSerializer import SnippetSerializer
+from ..models import Snippet
+from ..serializers.ModelSerializer import SnippetSerializer
+
+__all__ = (
+    'snippet_list',
+    'snippet_detail',
+)
 
 
 @csrf_exempt
